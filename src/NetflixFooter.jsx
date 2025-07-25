@@ -18,7 +18,7 @@ const NetflixFooter = () => {
               </Col>
             </Row>
 
-            <Row className="row-cols-1 row-cols-sm-2 row-cols-md-4">
+            <Row className="row-cols-sm-1 row-cols-md-4">
               <Col className="footer-links">
                 <p>
                   <a href="#">Audio and Subtitles</a>
