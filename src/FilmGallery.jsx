@@ -50,7 +50,7 @@ class FilmGallery extends Component {
         style={{ backgroundColor: "#141414", borderRadius: "6px" }}
       >
         <h5 className="text-white mb-3">{this.props.search}</h5>
-        {/* Qui ci sono lo spinner e l'alert per l'errore nel caso di mancato recupero del film dalla fetch, ho fatto le prove cambiando la chiave e dovrebbe essere tutto ok  */}
+        {/* Qui ci sono lo spinner e l'alert per l'errore nel caso di mancato recupero del film dalla fetch, ho fatto le prove cambiando la chiave e dovrebbe essere tutto ok.  */}
         {this.state.isLoading && (
           <div className="text-center mb-3">
             <Spinner animation="border" variant="success" />
@@ -72,7 +72,7 @@ class FilmGallery extends Component {
                     : "https://placecats.com/300/450"
                 }
                 alt={film.Title}
-                // Qui ho messo una semplice gestione errore per l'extra dato che per Cowboy Bebop e Eva non trovava una cover. La sostituisce con un placecats.
+                // Qui ho messo una semplice gestione errore al caricamento per l'extra dato che per Cowboy Bebop e Eva non trovava una cover. La sostituisce con un placecats. Forse il ternario sopra è un po' ridondante ma comunque ha una funzione diversa in teoria.
                 onError={(e) => {
                   e.target.onerror = null;
                   e.target.src = "https://placecats.com/300/450";

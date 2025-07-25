@@ -14,8 +14,8 @@ function App() {
         <FilmGallery search="Neon Genesis Evangelion" />
         <FilmGallery search="Lord of The Rings" />
         <FilmGallery search="Cowboy Bebop" />
-        <NetflixFooter />
       </main>
+      <NetflixFooter />
     </>
   );
 }
