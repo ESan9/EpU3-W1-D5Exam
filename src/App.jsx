@@ -1,6 +1,5 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import MyNav from "./NetflixNavbar";
 import NetflixFooter from "./NetflixFooter";
 import NetflixNavbar from "./NetflixNavbar";
 
