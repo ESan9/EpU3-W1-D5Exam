@@ -1,7 +1,7 @@
 import { Component } from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
-import "../assets/FilmGallery.css";
+import { Container, Row, Col } from "react-bootstrap";
 import { Spinner, Alert } from "react-bootstrap";
+import "../assets/css/FilmGallery.css";
 
 const endpoint = "http://www.omdbapi.com/?apikey=78413715&s=";
 
@@ -47,10 +47,10 @@ class FilmGallery extends Component {
     return (
       <Container
         className="my-4"
-        style={{ backgroundColor: "#141414", borderRadius: "6px" }}
+        style={{ backgroundColor: "#141414", borderRadius: "5px" }}
       >
         <h5 className="text-white mb-3">{this.props.search}</h5>
-        {/* Qui ci sono lo spinner e l'alert per l'errore nel caso di mancato recupero del film dalla fetch, ho fatto le prove cambiando la chiave e dovrebbe essere tutto ok.  */}
+        {/* Qui ci sono lo spinner al loading e l'alert per l'errore nel caso di mancato recupero del film dalla fetch, ho fatto le prove cambiando la chiave e dovrebbe essere tutto ok.  */}
         {this.state.isLoading && (
           <div className="text-center mb-3">
             <Spinner animation="border" variant="success" />

@@ -1,6 +1,6 @@
 import { Dropdown } from "react-bootstrap";
 import { BsGrid, BsList } from "react-icons/bs";
-import "../assets/welcome.css";
+import "../assets/css/Welcome.css";
 
 const Welcome = () => {
   return (

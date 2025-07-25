@@ -1,5 +1,6 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { BsSearch, BsBell, BsPersonCircle } from "react-icons/bs";
+import logo from "../assets/logo.png";
 
 const NetflixNavbar = () => {
   return (
@@ -11,7 +12,7 @@ const NetflixNavbar = () => {
       <Container fluid className="px-4">
         <Navbar.Brand href="#">
           <img
-            src="assets/logo.png"
+            src={logo}
             alt="Netflix Logo"
             style={{ height: "32px", width: "auto" }}
             className="me-2"

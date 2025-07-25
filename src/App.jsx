@@ -1,9 +1,9 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import NetflixFooter from "./NetflixFooter";
-import NetflixNavbar from "./NetflixNavbar";
-import Welcome from "./Welcome";
-import FilmGallery from "./FilmGallery";
+import NetflixFooter from "./components/NetflixFooter";
+import NetflixNavbar from "./components/NetflixNavbar";
+import Welcome from "./components/Welcome";
+import FilmGallery from "./components/FilmGallery";
 
 function App() {
   return (
