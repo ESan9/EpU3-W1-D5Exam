@@ -12,7 +12,7 @@ const NetflixFooter = () => {
           <Col xs={12} md={10}>
             <Row className="mb-3">
               <Col>
-                <div className="d-flex gap-3 fs-5">
+                <div className="d-flex gap-3 fs-5 justify-content-center justify-content-lg-start">
                   <BsFacebook />
                   <BsInstagram />
                   <BsTwitterX />
@@ -73,17 +73,21 @@ const NetflixFooter = () => {
 
             <Row className="mt-3">
               <Col>
-                <button className="btn btn-outline-secondary btn-sm rounded-0">
-                  Service Code
-                </button>
+                <div className="d-flex justify-content-center justify-content-lg-start">
+                  <button className="btn btn-outline-secondary btn-sm rounded-0">
+                    Service Code
+                  </button>
+                </div>
               </Col>
             </Row>
 
             <Row className="mt-2">
               <Col>
-                <small className="text-secondary">
-                  &copy; 1997–2023 Netflix, Inc.
-                </small>
+                <div className="d-flex justify-content-center justify-content-lg-start">
+                  <small className="text-secondary">
+                    &copy; 1997–2023 Netflix, Inc.
+                  </small>
+                </div>
               </Col>
             </Row>
           </Col>

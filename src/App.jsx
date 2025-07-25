@@ -11,7 +11,7 @@ function App() {
       <main className="d-flex flex-column">
         <NetflixNavbar />
         <Welcome />
-        <FilmGallery search="Star Wars" />
+        <FilmGallery search="Neon Genesis Evangelion" />
         <FilmGallery search="Lord of The Rings" />
         <FilmGallery search="Cowboy Bebop" />
         <NetflixFooter />
