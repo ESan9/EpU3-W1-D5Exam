@@ -29,7 +29,7 @@ class FilmGallery extends Component {
           this.setState({
             films: [],
             isLoading: false,
-            isError: false,
+            isError: true,
           });
         }
       })
