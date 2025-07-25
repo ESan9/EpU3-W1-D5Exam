@@ -50,7 +50,7 @@ class FilmGallery extends Component {
         style={{ backgroundColor: "#141414", borderRadius: "6px" }}
       >
         <h5 className="text-white mb-3">{this.props.search}</h5>
-        {/* Spinner e gestione errore nel recuper film */}
+        {/* Qui ci sono lo spinner e l'alert per l'errore nel caso di mancato recupero del film dalla fetch, ho fatto le prove cambiando la chiave e dovrebbe essere tutto ok  */}
         {this.state.isLoading && (
           <div className="text-center mb-3">
             <Spinner animation="border" variant="success" />
