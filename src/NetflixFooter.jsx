@@ -3,7 +3,10 @@ import { BsFacebook, BsInstagram, BsTwitterX, BsYoutube } from "react-icons/bs";
 
 const NetflixFooter = () => {
   return (
-    <footer className="bg-dark text-secondary py-4 mt-5">
+    <footer
+      className="text-secondary py-4 mt-5"
+      style={{ backgroundColor: "#141414", borderRadius: "6px" }}
+    >
       <Container>
         <Row className="justify-content-center">
           <Col xs={12} md={10}>

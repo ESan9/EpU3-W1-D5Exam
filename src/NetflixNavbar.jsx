@@ -3,7 +3,11 @@ import { BsSearch, BsBell, BsPersonCircle } from "react-icons/bs";
 
 const NetflixNavbar = () => {
   return (
-    <Navbar expand="lg" bg="dark" variant="dark">
+    <Navbar
+      expand="lg"
+      variant="dark"
+      style={{ backgroundColor: "#141414", borderRadius: "6px" }}
+    >
       <Container fluid className="px-4">
         <Navbar.Brand href="#">
           <img

@@ -4,7 +4,7 @@ import "../assets/welcome.css";
 
 const Welcome = () => {
   return (
-    <div className="d-none d-md-flex justify-content-between align-items-center px-4 py-3 bg-dark text-white">
+    <div className="d-none d-md-flex justify-content-between align-items-center px-4 py-3 text-white">
       <div className="d-flex align-items-center gap-3">
         <h4 className="mb-0 fw-bold">TV Shows</h4>
 

@@ -1,10 +1,3 @@
-.film-cover {
-  width: 100%;
-  height: 400px;
-  object-fit: fill;
-  cursor: pointer;
-}
-
 .footer-links p {
   margin-bottom: 0.4rem;
 }
@@ -17,4 +10,13 @@
 .footer-links a:hover {
   text-decoration: underline;
   color: #ccc;
+}
+
+body {
+  background-color: #141414;
+  color: white;
+}
+
+#root {
+  background-color: #141414;
 }
