@@ -4,3 +4,17 @@
   object-fit: fill;
   cursor: pointer;
 }
+
+.footer-links p {
+  margin-bottom: 0.4rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #999;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: #ccc;
+}
