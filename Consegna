@@ -1,35 +1,4 @@
-Miglioriamo ancora EpiBooks
+data.search da mappare
+Stesso componente con prop diversa?
 
-Inizia dal tuo progetto precedente (o dalla soluzione di ieri), oggi permetterai agli utenti di lasciare recensioni sui libri. Ricorda, ogni commento postato sarà visibile a tutti :)
-
-Aggiungi un componente CommentArea alla fine di SingleBook. Quando l'utente cliccherà su un SingleBook (quindi quando la proprietà selected nel suo stato diventa true), i commenti dovranno apparire (suggerimento: short-circuit operator!).CommentArea dovrà fare la fetch delle recensioni per il libro selezionato, e salvare i commenti nel proprio stato. Conterrà inoltre due sotto-componenti: CommentsList and AddComment.CommentsList mostrerà le recensioni del libro in un elenco; l'array di recensioni gli verrà passato come prop dal componente CommentArea. La singola recensione verrà visualizzata utilizzando un altro componente, chiamato SingleComment.AddComment conterrà un form per aggiungere il testo della recensione e il voto (da 1 o a 5). Questo componente dovrà permettere all'utente di fare la POST del nuovo commento sul libro selezionato.[EXTRA]Aggiungi vicino ogni commento un bottone per cancellarlo (DELETE). Dovrà creare una richiesta verso https://striveschool-api.herokuapp.com/api/comments/:commentIdCrea un componente Loading. Questo apparirà nella pagina quando la richiesta è in fase di elaborazione, ma non ancora risolta.Crea un componente Error. Se qualcosa andrà male con una network request, dovrà apparire un messaggio di errore.
-
-📃 API Docs:
-
-Hai un endpoint CRUD per commenti su:
-
-https://striveschool-api.herokuapp.com/api/comments/
-
-Questo significa che puoi fare il GET, DELETE, POST, PUT dei dati da lì.
-
-❗❗❗ IMPORTANTE ❗❗❗Dovrai usare gli headers di autenticazione (Authentication headers) (prendi un nuovo token su https://strive.school/studentlogin se il precedente è scaduto)
-
-Il commento è strutturato ad oggetto in questa maniera:
-
-{  "comment": string  "rate": string  "elementId": string}
-
-Dove:
-
-comment è il testo del commento inserito dall'utenterate è il valore tra 1 e 5elementId è il codice ASIN del libro
-
-Esempio:
-
-{  "comment": "A good book but definitely I don't like many parts of the plot",  "rate": "3",  "elementId": "0316438960"}
-
-⚠️ WARNING ⚠️
-
-Fare una GET su https://striveschool-api.herokuapp.com/api/comments/ ti ritornerà TUTTI i commenti a database. Probabilmente a te interesserà principalmente ricevere i commenti di un singolo libro alla volta: per fare ciò dovrai specificare l'elementId/ASIN del libro nella tua URL:https://striveschool-api.herokuapp.com/api/comments/:elementId
-
-Esempio:
-
-https://striveschool-api.herokuapp.com/api/comments/0316438960 troverà i commenti di un singolo libro.
+http://www.omdbapi.com/?i=tt3896198&apikey=78413715 API
